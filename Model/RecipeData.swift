@@ -6,11 +6,7 @@
 import Foundation
 
 // MARK: - Recipe
-struct Recipe: Decodable {
-    let q: String
-    let from, to: Int
-    let more: Bool
-    let count: Int
+struct RecipeData: Decodable {
     var hits: [Hit]
 }
 
@@ -21,13 +17,13 @@ struct Hit: Decodable {
 
 // MARK: - RecipeClass
 struct RecipeClass: Decodable {
-    let uri: String
     let label: String
     var image: String
     let source: String
     let url: String
     let ingredients: [Ingredient]
     let totalTime: Int
+    let yield: Int
 }
 
 // MARK: - Ingredient
