@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
     
+    /// Alert in case of errors
     func presentAlert(title: String, message: String) {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Ok !", style: .cancel, handler: nil))
