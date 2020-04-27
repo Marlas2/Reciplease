@@ -10,9 +10,6 @@
 import Foundation
 import Alamofire
 
-protocol AlamoSession {
-    func request(with url: URL, callback: @escaping (DataResponse<Any>) -> Void )
-}
 struct FakeResponse {
     var response: HTTPURLResponse?
     var data: Data?
